@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+<div class="container" style="height: 39.5vh;">
+    <div class="formBox mt-3">
+        <form action="/register/<%= user._id %>?_method=PUT" method="POST"  role="form" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/uploads/<%= user.image %>" class="w-75 img-thumbnail float-right shadow">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="username" class="form-control mb-3 shadow" value="<%= user.username %>">
+                    <input type="email" name="email" class="form-control mb-2 shadow" value="<%= user.email %>">
+                    <lable class="font-weight-normal">To Update User Image Enter here, </lable>
+                    <input type="file" name="file" class="mb-2 border p-1 w-100 bg-light shadow">
+                    <button class="btn btn-sm btn-secondary shadow">Update me</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<%- include('partials/footer') %>

@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+    <div class="container">
+        <h1 class="text-center">Create a New member</h1>
+        <div class="row text-center">
+            <div style="width: 30%; margin: 30px auto;">
+                <form action="/home" method="POST">
+                    <div class="form-group">
+                        <input class="form-control" type="file" name="profileImage" placeholder="Upload a file">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-block btn-success">Submit!</button>
+                    </div>
+                </form>
+                <a href="/home" class="float-left">Go Back</a>
+            </div>
+        </div>
+    </div>
+<%- include('partials/footer') %>

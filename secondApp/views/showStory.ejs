@@ -1,0 +1,97 @@
+<%- include ('partials/header') %>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="text">
+                <h4 class="date"><%= story.title %></h4>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <p class="start"><%= story.para1 %></p>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image1 %>" class="Starting_image">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image2 %>" class="image">
+                    </div>
+                    <div class="col-lg-9">
+                        <p><%= story.para2 %></p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-9">
+                        <p><%= story.para3 %></p>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image3 %>" class="image">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image4 %>" class="image">
+                    </div>
+                    <div class="col-lg-9">
+                        <p><%= story.para4 %></p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-9">
+                        <p><%= story.para5 %></p>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image5 %>" class="image">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image6 %>" class="image">
+                    </div>
+                    <div class="col-lg-9">
+                        <p><%= story.para6 %></p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-9">
+                        <p><%- story.para7 %></p>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image7 %>" class="image">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image8 %>" class="image">
+                    </div>
+                    <div class="col-lg-9">
+                        <p><%= story.para8 %></p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-9">
+                        <p><%= story.para9 %></p>
+                    </div>
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image9 %>" class="image">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 d-none d-lg-block d-xl-block">
+                        <img src="<%= story.image10 %>" class="image">
+                    </div>
+                    <div class="col-lg-9">
+                        <p><%= story.para10 %></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                Author details
+               <p class="text-dark"> Name:<%= story.authorName %></p>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include ('partials/footer') %>

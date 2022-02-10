@@ -1,0 +1,82 @@
+<%- include ('partials/header') %>
+<div class="container-fluid float-left bg-light">
+    <h1 class="text-light">Add your Story</h1>
+    <form action="/badmassamerica/story/<%= story._id %>?_method=PUT" method="POST">
+        <div class="form-group">
+            <label class="font-weight-bold float-left mr-2 h4">TITLE </label>
+            <input type="text" name="story[title]" value="<%= story.title %>" class="form-control w-50">
+        </div>
+        <div class="form-group">
+            <label class="float-left mr-2 h5 mt-1">Author name</label>
+            <input type="text" name="story[authorName]" value="<%= story.authorName %>" class="form-control w-50">
+        </div>
+
+        <div class="form-group w-50 float-left pr-2">
+            <label class="mr-2 h5 mt-1">Paragraph 1:</label>
+            <textarea name="story[para1]" rows="10" maxlength="750" minlength="700" class="form-control"><%= story.para1 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:1</label>
+            <input type="text" name="story[image1]" value="<%= story.image1 %>" class="form-control w-100">  
+        </div>
+        <div class="form-group w-50 float-left pl-2">
+            <label class="mr-2 h5 mt-1">Paragraph 2:</label>
+            <textarea name="story[para2]" rows="10" maxlength="1200" minlength="1000" class="form-control"><%= story.para2 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:2</label>
+            <input type="text" name="story[image2]" value="<%= story.image2 %>" class="form-control w-100">
+        </div>
+        <hr class="float-left bg-dark w-100">
+        <div class="form-group w-50 float-left pr-2">
+            <label class="mr-2 h5 mt-1">Paragraph 3:</label>
+            <textarea name="story[para3]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para3 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:3</label>
+            <input type="text" name="story[image3]" value="<%= story.image3 %>" class="form-control w-100">  
+        </div>
+        <div class="form-group w-50 float-left pl-2">
+            <label class="mr-2 h5 mt-1">Paragraph 4:</label>
+            <textarea name="story[para4]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para4 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:4</label>
+            <input type="text" name="story[image4]" value="<%= story.image4 %>" class="form-control w-100">
+        </div>
+        <hr class="float-left bg-dark w-100">
+        <div class="form-group w-50 float-left pr-2">
+            <label class="mr-2 h5 mt-1">Paragraph 5:</label>
+            <textarea name="story[para5]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para5 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:5</label>
+            <input type="text" name="story[image5]" value="<%= story.image5 %>" class="form-control w-100">  
+        </div>
+        <div class="form-group w-50 float-left pl-2">
+            <label class="mr-2 h5 mt-1">Paragraph 6:</label>
+            <textarea name="story[para6]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para6 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:6</label>
+            <input type="text" name="story[image6]" value="<%= story.image6 %>" class="form-control w-100">
+        </div>
+        <hr class="float-left bg-dark w-100">
+        <div class="form-group w-50 float-left pr-2">
+            <label class="mr-2 h5 mt-1">Paragraph 7:</label>
+            <textarea name="story[para7]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para7 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:7</label>
+            <input type="text" name="story[image7]" value="<%= story.image7 %>" class="form-control w-100">  
+        </div>
+        <div class="form-group w-50 float-left pl-2">
+            <label class="mr-2 h5 mt-1">Paragraph 8:</label>
+            <textarea name="story[para8]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para8 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:8</label>
+            <input type="text" name="story[image8]" value="<%= story.image8 %>" class="form-control w-100">
+        </div>
+        <hr class="float-left bg-dark w-100">
+        <div class="form-group w-50 float-left pr-2">
+            <label class="mr-2 h5 mt-1">Paragraph 9:</label>
+            <textarea name="story[para9]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para9 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:9</label>
+            <input type="text" name="story[image9]" value="<%= story.image9 %>" class="form-control w-100">  
+        </div>
+        <div class="form-group w-50 float-left pl-2">
+            <label class="mr-2 h5 mt-1">Paragraph 10:</label>
+            <textarea name="story[para10]" rows="10" minlength="1000" maxlength="1200" class="form-control"><%= story.para10 %></textarea>
+            <label class="font-weight-normal mr-2 h4">Paragraph Image:10</label>
+            <input type="text" name="story[image10]" value="<%= story.image10 %>" class="form-control w-100">
+        </div>
+        <input type="submit" class="btn btn-lg btn-primary my-2 rounded-0 float-right" value="Update">
+    </form>
+</div>
+<%- include ('partials/footer') %>
+

@@ -1,0 +1,29 @@
+<%- include ('partials/header') %>
+<div class="container">
+    <div class="row">
+        <% storys.forEach(function(story){ %>
+            <div class="col-md-4">
+                <div class="card bg-secondary shadow">
+                    <div class="ml-2 mt-1 row">
+                        <div class="col-2">
+                            <img src="<%= story.image1 %>" class="rounded-circle dp">
+                        </div>
+                        <div class="col-10">
+                            <h5 class="text-warning"><%= story.title %></h5>
+                            <h6 class="text-light font-weight-light"><%= story.created.toDateString() %></h6>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="start"><%- story.para1.substring(0, 80) %>...</p>
+                        <a href="/badmassamerica/story/<%= story._id %>" class="btn btn-outline-warning btn-sm float-right mt-2">Read more!</a>
+                        <a href="/badmassamerica/story/<%= story._id %>/edit" class="btn btn-outline-dark btn-sm float-right mt-2 mr-2">Edit</a>
+                    </div>
+                    
+                </div>
+            </div>
+        <% }); %>
+    </div>
+    <a href="/badmassamerica/new" class="btn bg-warning btn-sm mt-3">Add Story<lable class="font-weight-bold">+</lable></a>
+</div>
+<%- include ('partials/footer') %>
+

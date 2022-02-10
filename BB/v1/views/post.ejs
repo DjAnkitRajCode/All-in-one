@@ -1,0 +1,40 @@
+<%- include ('partials/header') %>
+<% members.forEach(function(member){ %>
+<div class="card my-3">
+    <div class="container mt-2">
+        <table class="float-left mb-2">
+            <tr>
+                <th rowspan="2" class="pr-2"><img src="/uploads/<%= member.image %>" id="hole"></th>
+                <th><%= member.username %></th>
+            </tr>
+            <tr>
+                <td>17 feb,2020</td>
+            </tr>
+        </table>
+        <h5><%= posts.text %></h5>
+        <div class="dropdown float-right">
+            <img type="button" src="/images/setting.png" class="header_logo dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+            <ul class="dropdown-menu dropdown-menu-lg-right list-group-flush m-0 p-0" aria-labelledby="dropdownMenuButton">
+                <a href="#" class="list-group-item p-2 font-weight-bold listPrimary"><img src="/images/edit.png" class="logo mx-2"> Edit Post</a>
+                <a href="#" class="list-group-item p-2 font-weight-bold listRed"><img src="/images/delete.png" class="logo mx-2"> Delete</a>
+            </ul>
+        </div>
+        <div class="card-body">
+            <img src="/images/bajrangdal_cover.jpg" id="post">
+        </div>
+        <div class="row mb-3 mt-0">
+            <a href="#" class="col-3 font-weight-bold text-decoration-none text-dark border mx-auto py-2">
+              <img src="/images/like.png" class="post_reaction"> Like
+            </a>
+            <a href="#" class="col-3 font-weight-bold text-decoration-none text-dark border mx-auto py-2 ">
+              <img src="/images/comment.png" class="post_reaction"> Comments
+            </a>
+            <a href="#" class="col-3 font-weight-bold text-decoration-none text-dark border mx-auto py-2">
+              <img src="/images/fileShare.png" class="post_reaction"> Share
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+<% }); %>
+<%- include ('partials/footer') %>
